@@ -1,0 +1,44 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Compiled Go packages
+*.pkg
+*.exe
+*.test
+
+# Binary
+bin/
+
+# Output directories
+/_output
+/_test
+/vendor
+/Godeps
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Log files
+*.log
+
+# macOS-specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# JetBrains GoLand IDE
+.idea/
+
+# MongoDB database directory
+/dbdata
+
+# Ignore MongoDB connection string (if present)
+/database/connection-string
+
+# Ignore API keys and sensitive data (modify as needed)
+/secrets.env
+/secrets.json

@@ -4,7 +4,8 @@ This is a backend API for a restaurant management system, implemented in Golang.
 
 ## Overview
 
-This project provides a backend API for a restaurant management system. It includes controllers, models, routes, and middleware to handle various restaurant-related operations.
+This project provides a backend API for a restaurant management system. It includes controllers, models, routes, and middleware to handle various restaurant-related operations. 
+More about backend api architecture in GO: https://github.com/amitshekhariitbhu/go-backend-clean-architecture
 
 ## Features
 

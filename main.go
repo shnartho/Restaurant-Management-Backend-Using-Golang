@@ -3,11 +3,15 @@ package main
 import (
 	"os"
 
-	"github.com/gin-gonic/gin"
-
+	"golang-restaurant-management/database"
 	"golang-restaurant-management/middleware"
 	"golang-restaurant-management/routes"
+
+	"github.com/gin-gonic/gin"
+	"go.mongodb.org/mongo-driver/mongo"
 )
+
+var foodCollection *mongo.Collection = database.OpenConnection(database.Client, "food")
 
 func main() {
 	port := os.Getenv("PORT")

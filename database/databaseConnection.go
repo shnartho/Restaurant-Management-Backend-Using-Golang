@@ -10,6 +10,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
+// db connection
 func DBInstance() *mongo.Client {
 	MongoDb := "mongodb://localhost:27017"
 	fmt.Println(MongoDb)

@@ -72,11 +72,8 @@ func CreateFood() gin.HandlerFunc {
 			return 
 		}
 		defer cancel()
-
 		c.JSON(http.StatusOK, result)
-
 	}
-
 }
 
 func round(num float64) int {

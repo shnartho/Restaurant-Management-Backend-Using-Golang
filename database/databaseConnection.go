@@ -32,7 +32,7 @@ func DBInstance() *mongo.Client {
 
 var Client *mongo.Client = DBInstance()
 
-func OpenConnection(client *mongo.Client, collectionName string) *mongo.Connection {
+func OpenConnection(client *mongo.Client, collectionName string) *mongo.Collection {
 	var collection *mongo.Collection = client.Database("restaurant").Collection(collectionName)
 	return collection
 }
